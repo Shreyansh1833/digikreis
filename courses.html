@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TVBLCXDT');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses - DigiKreis Technologies</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="websiteBody">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVBLCXDT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ════════════════ NAV ════════════════ -->
+<nav>
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-icon">
+      <img src="images/logo.png" alt="Logo" />
+    </div>
+    <span class="nav-logo-text">DigiKreis</span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a id="nav-home" href="index.html">Home</a></li>
+    <li><a id="nav-about" href="about.html">About</a></li>
+    <li><a id="nav-courses" class="active" href="courses.html">Courses</a></li>
+    <li><a id="nav-contact" href="contact.html">Contact</a></li>
+  </ul>
+  <ul class="nav-links">
+    <a href="https://wa.me/8095819639" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+      <img src="images/whatsapp.svg" alt="Phone" style="width: 18px; height: 18px; margin-right: 6px;" />
+    </a>
+    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=info@digikreis.com" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+      <img src="images/email.svg" alt="Phone" style="width: 18px; height: 18px; margin-right: 6px;" />
+    </a>
+  </ul>
+</nav>
+
+<!-- ════════════════ COURSES LIST PAGE ════════════════ -->
+<div id="page-courses-list">
+  <div class="hero courses-hero">
+    <!-- <div class="hero-badge">
+      <span>Trusted by 5,000+ companies</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="2" fill="#b8965a"/>
+      </svg>
+      <span>Live classes</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="2" fill="#b8965a"/>
+      </svg>
+      <span>Virtual labs</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="2" fill="#b8965a"/>
+      </svg>
+      <span>Expert trainers</span>
+    </div> -->
+    <h1>Explore Our Courses</h1>
+    <p>Choose from 150+ certification paths and specialized training programs across premium domains.</p>
+    <!-- <div class="hero-search">
+      <input type="text" placeholder="What do you want to learn?" />
+      <button>Search →</button>
+    </div> -->
+    <div class="hero-btns">
+      <a class="btn-primary" href="contact.html">Book a Consultation</a>
+      <a class="btn-outline" href="contact.html">Request a Call</a>
+    </div>
+  </div>
+
+  <section class="section-bg-alt" id="domainsSection">
+    <div class="container">
+      <div class="section-title">
+        <h2>Browse Training Domains</h2>
+        <p>25 technology domains &mdash; 30 courses each with Market Demand 2026 &amp; Duration data.</p>
+        <!-- Global Search Bar — paste after the <p> inside section-title div -->
+        <div id="global-search-bar">
+          <div style="position:relative; flex:1;">
+            <span class="gs-icon">&#128269;</span>
+            <input id="gs-input" type="text"
+              placeholder="Search domains or courses (e.g. Security, Python, AWS...)">
+            <div id="search-results-dropdown"></div>
+          </div>
+          <button id="gs-search-btn">Search</button>
+        </div>
+      </div>
+      <div class="training-grid">
+
+        <div class="training-card">
+          <div class="training-icon">🤖</div><h3>Artificial Intelligence</h3>
+          <p>Machine learning, deep learning, and AI solutions</p>
+          <div class="training-cta"><span>60 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Artificial Intelligence')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">🧠</div><h3>Machine Learning</h3>
+          <p>ML algorithms, model training, and production deployment</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Machine Learning')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">✨</div><h3>Generative AI</h3>
+          <p>Large language models, prompt engineering, and GenAI apps</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Generative AI')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">🔒</div><h3>Cybersecurity</h3>
+          <p>Defensive and offensive security, threat management</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Cybersecurity')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">☁️</div><h3>Cloud Computing</h3>
+          <p>Multi-cloud platforms, architecture, and migration strategies</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Cloud Computing')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">☁️</div><h3>AWS</h3>
+          <p>Amazon Web Services cloud platform, solutions, and certifications</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('AWS')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">🔷</div><h3>Microsoft Azure</h3>
+          <p>Azure cloud services, infrastructure, and certifications</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Microsoft Azure')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">☁️</div><h3>Google Cloud</h3>
+          <p>Google Cloud Platform services and enterprise solutions</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Google Cloud')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">⚙️</div><h3>DevOps</h3>
+          <p>CI/CD pipelines, automation, and DevOps culture</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('DevOps')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">⎈</div><h3>Kubernetes</h3>
+          <p>Container orchestration, Helm, and Kubernetes operations</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Kubernetes')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">🐳</div><h3>Docker</h3>
+          <p>Containerization with Docker and related ecosystems</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Docker')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">📊</div><h3>Data Science</h3>
+          <p>Data analysis, visualization, and statistical insights</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Data Science')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">🔧</div><h3>Data Engineering</h3>
+          <p>Data pipelines, ETL processes, and data infrastructure</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Data Engineering')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">🐍</div><h3>Python</h3>
+          <p>Python programming, scripting, and automation</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Python')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">☕</div><h3>Java</h3>
+          <p>Enterprise Java, Spring Boot, and JVM ecosystem</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Java')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">🔷</div><h3>.NET</h3>
+          <p>Microsoft .NET framework development and enterprise applications</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('.NET')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">💻</div><h3>Full Stack</h3>
+          <p>End-to-end web application development front and back</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Full Stack')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">📈</div><h3>SAP</h3>
+          <p>SAP ERP, S/4HANA, FICO, and implementation</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('SAP')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">🗄️</div><h3>Oracle</h3>
+          <p>Oracle database, PL/SQL, and enterprise solutions</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Oracle')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">☁️</div><h3>Salesforce</h3>
+          <p>Salesforce CRM, Apex, LWC, and platform development</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Salesforce')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">🌐</div><h3>Networking</h3>
+          <p>Network design, administration, and security protocols</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Networking')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">⛓️</div><h3>Blockchain</h3>
+          <p>Distributed ledger, Web3, and blockchain technologies</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('Blockchain')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">🤖</div><h3>RPA</h3>
+          <p>Robotic Process Automation with UiPath, Automation Anywhere</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('RPA')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">📡</div><h3>IoT</h3>
+          <p>Internet of Things devices, sensors, and platforms</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('IoT')">View More</button></div>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">🎨</div><h3>UI/UX</h3>
+          <p>User interface design, UX research, and prototyping</p>
+          <div class="training-cta"><span>30 Courses</span>
+          <button class="cc-enroll-btn" onclick="showDomainDetail('UI/UX')">View More</button></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+      <div class="container">
+
+          <div class="section-title">
+              <h2>Featured Courses</h2>
+              <p>Most popular programs chosen by professionals.</p>
+          </div>
+
+          <div class="featured-grid">
+
+              <div class="featured-course">
+                  <div class="course-badge">Top Course</div>
+                  <h3>AZ-104: Microsoft Azure Administrator</h3>
+                  <p>Master Azure management, governance, and enterprise security.</p>
+                  <a class="btn-primary">Enroll Now</a>
+              </div>
+
+              <div class="featured-course">
+                  <div class="course-badge">Popular</div>
+                  <h3>Certified Ethical Hacker (CEH)</h3>
+                  <p>Learn offensive security techniques and penetration testing.</p>
+                  <a class="btn-primary">Enroll Now</a>
+              </div>
+
+              <div class="featured-course">
+                  <div class="course-badge">Trending</div>
+                  <h3>AWS Certified Solutions Architect</h3>
+                  <p>Design scalable and secure AWS solutions for enterprises.</p>
+                  <a class="btn-primary">Enroll Now</a>
+              </div>
+
+              <div class="featured-course">
+                  <div class="course-badge">Enterprise</div>
+                  <h3>Project Management Professional (PMP)</h3>
+                  <p>Comprehensive PMP exam prep and project leadership skills.</p>
+                  <a class="btn-primary">Enroll Now</a>
+              </div>
+
+          </div>
+
+      </div>
+  </section>
+
+  <section class="section-bg-alt">
+      <div class="container">
+
+          <div class="section-title">
+              <h2>Learning Paths</h2>
+              <p>Structured programs designed to accelerate your career.</p>
+          </div>
+
+          <div class="catalog-grid">
+
+              <div class="catalog-card">
+                  <h3>Azure Fundamentals</h3>
+                  <ul>
+                      <li>AZ-900T00: Microsoft Azure Fundamentals</li>
+                      <li>AZ-900T01: Microsoft Azure Fundamentals — 2 days</li>
+                      <li>AZ-900T00: Microsoft Azure Fundamentals — 1 day</li>
+                      <li>Azure Fundamentals ? Customized</li>
+                      <li>Azure fundamentals — 4hrs</li>
+                  </ul>
+                  <button class="show-toggle" onclick="toggleCourses(this)">
+                      Show More
+                  </button>
+              </div>
+
+              <div class="catalog-card">
+                  <h3>Azure Administration & Architecture</h3>
+                  <ul>
+                      <li>AZ-104T00-A: Microsoft Azure Administrator</li>
+                      <li>AZ-103: Microsoft Azure Administrator</li>
+                      <li>AZ-100 Microsoft Azure Infrastructure and Deployment</li>
+                      <li>AZ-140T00: Configuring and Operating Microsoft Azure Virtual Desktop</li>
+                      <li>AZ-120T00: Planning and Deploying SAP on Azure</li>
+                      
+                      <li class="extra-course">AZ-303: Microsoft Azure Architect Technologies</li>
+                      <li class="extra-course">AZ-304: Microsoft Azure Architect Design</li>
+                      <li class="extra-course">AZ-305T00: Designing Microsoft Azure Infrastructure Solutions</li>
+                      <li class="extra-course">AZ-700T00: Designing and Implementing Microsoft Azure Networking Solutions</li>
+                      <li class="extra-course">AZ-600T00: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub</li>
+                      <li class="extra-course">AZ-030T00-A: Microsoft Azure technologies for AWS architects</li>
+                      <li class="extra-course">AZ-010T00-A: Azure Administration for AWS SysOps</li>
+                      <li class="extra-course">AZ-020T00-A: Microsoft Azure solutions for AWS developers</li>
+                  </ul>
+                   <button class="show-toggle" onclick="toggleCourses(this)">
+                      Show More
+                  </button>
+              </div>
+
+              <div class="catalog-card">
+                  <h3>Azure Security & Governance</h3>
+                  <ul>
+                      <li>AZ-500: Microsoft Azure Security Technologies</li>
+                      <li>Cloud Security for Azure</li>
+                      <li>Azure AD and Security</li>
+                      <li>Microsoft Azure Support Engineer Troubleshooting Azure Connectivity</li>
+                      <li>Cost Optimization in Azure</li>
+                  </ul>
+              </div>
+              <div class="catalog-card">
+                  <h3>Azure Data, Analytics & AI</h3>
+                  <ul>
+                    <li>DP-900T00: Microsoft Azure Data Fundamentals</li>
+                    <li>DP-200T01: Implementing an Azure Data Solution</li>
+                    <li>DP-201T01: Designing an Azure Data Solution</li>
+                    <li>DP-203T00: Data Engineering on Microsoft Azure</li>
+                    <li>DP-300T00: Administering Microsoft Azure SQL Solutions</li>
+                    
+                    <li class="extra-course">DP-100T01: Designing and Implementing a Data Science Solution on Azure</li>
+                    <li class="extra-course">AI-900T00: Introduction to AI in Azure</li>
+                    <li class="extra-course">AI-100T01: Designing and Implementing an Azure AI Solution</li>
+                    <li class="extra-course">AI-102T00: Develop AI solutions in Azure</li>
+                    <li class="extra-course">AI-050T00: Develop Generative AI Solutions with Azure OpenAI Service</li>
+                    <li class="extra-course">Microsoft Azure Data Factory</li>
+                    <li class="extra-course">Azure Databricks</li>
+                    <li class="extra-course">Azure HDInsight</li>
+                    <li class="extra-course">Microsoft Azure Big Data Analytics</li>
+                    <li class="extra-course">Azure Data Engineering with Data Factory and Databricks</li>
+                    <li class="extra-course">KQL for Azure Admins</li>
+                    <li class="extra-course">Microsoft Azure Data Explorer with Advanced KQL</li>
+                    <li class="extra-course">Implementing a Cloud Data Warehouse in Microsoft Azure Synapse Analytics</li>
+                    <li class="extra-course">Microsoft Cloud Workshop: Azure Synapse Analytics and AI</li>
+                    <li class="extra-course">Azure MLOps</li>
+                    <li class="extra-course">Microsoft Azure Purview</li>
+                    <li class="extra-course">Microsoft Azure IoT Developer</li>
+                    <li class="extra-course">Microsoft Azure Cosmos DB Solutions</li>
+                  </ul>
+                   <button class="show-toggle" onclick="toggleCourses(this)">
+                      Show More
+                  </button>
+              </div>
+              <div class="catalog-card">
+                  <h3>Azure DevOps, Automation & IaC</h3>
+                  <ul>
+                    <li>Azure DevOps Server</li>
+                    <li>Azure DevOps + Terraform</li>
+                    <li>Advanced DevOps Tools — Git, Ansible, Kubernetes on baremetal and Azure, CI/CD with Jenkins</li>
+                    <li>Terraform Certified Associate with Azure</li>
+                    <li>Terraform-Customized-Azure</li>
+                    
+                    <li class="extra-course">GitHub Actions with Azure</li>
+                    <li class="extra-course">Build CI/CD Pipelines in Azure DevOps from YAML</li>
+                    <li class="extra-course">Customized Azure DevOps</li>
+                    <li class="extra-course">Azure Automation</li>
+                    <li class="extra-course">Azure Infrastructure as Code (IaC) Workshop</li>
+                  </ul>
+                   <button class="show-toggle" onclick="toggleCourses(this)">
+                      Show More
+                  </button>
+              </div>
+              <div class="catalog-card">
+                  <h3>Citrix & Specialized Azure Solutions</h3>
+                  <ul>
+                    <li>CXD-252: Moving to the Citrix Virtual Apps and Desktops Service on Citrix Cloud with Microsoft Azure</li>
+                    <li>CXD-251: Citrix Virtual Apps and Desktops Service on Microsoft Azure</li>
+                    <li>CWS-251: Implement Citrix DaaS on Microsoft Azure</li>
+                    <li>Azure VMware Solution: Plan, Deploy and Workload Migration</li>
+                    <li>Azure VMware Solution: Networking</li>
+                    
+                    <li class="extra-course">Azure Virtual Desktop Advance</li>
+                    <li class="extra-course">Azure Integration Services</li>
+                    <li class="extra-course">Azure: Cloud Native Apps</li>
+                    <li class="extra-course">Azure Kubernetes Service (AKS)</li>
+                    <li class="extra-course">Microsoft Azure Technical Workshop: Migrate and Modernize SAP on the Microsoft Cloud</li>
+                    <li class="extra-course">Microsoft Azure Virtual Training Day: Migrate Linux and PostgreSQL to Azure</li>
+                    <li class="extra-course">Microsoft Azure Virtual Training Day: Mastering Reliability, Security, and Performance on Azure</li>
+                  </ul>
+                   <button class="show-toggle" onclick="toggleCourses(this)">
+                      Show More
+                  </button>
+              </div>
+
+          </div>
+
+      </div>
+  </section>
+
+  <!-- <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Trusted by the World's Leading Technology<br/>& Certification Partners</h2>
+        <p>Industry-leading training across key technology areas and certifications.</p>
+      </div>
+      <div class="partners-grid">
+        <div class="partner-logo" style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+          <div style="width:60px;height:40px;background:var(--card-border);border-radius:4px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px;color:var(--gold);">RPS</div>
+          <span style="font-size:12px;">RPS</span>
+        </div>
+        <div class="partner-logo" style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+          <div style="width:60px;height:40px;background:var(--card-border);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--text-muted);text-align:center;font-weight:700;line-height:1.2;">Time's<br/>group</div>
+          <span style="font-size:12px;">Time's group</span>
+        </div>
+        <div class="partner-logo" style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+          <div style="width:60px;height:40px;background:var(--card-border);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--text-muted);text-align:center;font-weight:700;line-height:1.2;">Spring<br/>people</div>
+          <span style="font-size:12px;">Spring people</span>
+        </div>
+        <div class="partner-logo" style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+          <div style="width:60px;height:40px;background:var(--card-border);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--text-muted);text-align:center;font-weight:700;line-height:1.2;">Orchid<br/>academy</div>
+          <span style="font-size:12px;">Orchid academy</span>
+        </div>
+        <div class="partner-logo" style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+          <div style="width:60px;height:40px;background:var(--card-border);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--text-muted);font-weight:700;">VLS</div>
+          <span style="font-size:12px;">VLS</span>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="section-bg-alt">
+    <div class="container">
+      <div class="section-title"><h2>Learning Delivery Options</h2><p>Train the way that works best for your organization.</p></div>
+      <div class="courses-delivery-grid">
+        <div class="delivery-card"><div class="delivery-icon">🏫</div><h3>Classroom Training</h3><p>Hands-on instructor-led sessions with live labs and guided practice in premium facilities.</p><a class="btn-primary" style="font-size:13px;padding:8px 18px;" href="contact.html">Book Now</a></div>
+        <div class="delivery-card"><div class="delivery-icon">🖥️</div><h3>Live Online Classes</h3><p>Real-time virtual classrooms with interactive labs, Q&A, and collaborative learning.</p><a class="btn-primary" style="font-size:13px;padding:8px 18px;" href="contact.html">Book Now</a></div>
+        <!-- <div style="grid-column:2; grid-row:1/3; background:rgba(200,134,10,0.15); border:2px solid var(--gold); border-radius:12px; padding:2rem 1.5rem; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.75rem;"><div class="delivery-icon" style="background:rgba(200,134,10,0.25);">🖥️</div><h3 style="font-size:16px;font-weight:700;color:var(--gold-light);">Live Online Classes</h3><p style="font-size:13px;color:var(--text-muted);">Real-time virtual classrooms with interactive labs, Q&A, and collaborative learning.</p><a class="btn-primary" style="font-size:13px;padding:8px 18px;" href="contact.html">Book Now</a></div> -->
+        <div class="delivery-card"><div class="delivery-icon">🎧</div><h3>Self-Paced Learning</h3><p>Recorded sessions with 24/7 support, perfect for flexible schedules and remote teams.</p><a class="btn-primary" style="font-size:13px;padding:8px 18px;" href="contact.html">Book Now</a></div>
+        <div class="delivery-card"><div class="delivery-icon">🚀</div><h3>Corporate Bootcamps</h3><p>Customized intensive programs designed for business-critical transformation projects.</p><a class="btn-primary" style="font-size:13px;padding:8px 18px;" href="contact.html">Book Now</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="toc-section section-bg-alt">
+    <div class="container">
+
+      <!-- Section Title -->
+      <div class="section-title">
+        <h2>AWS CDK for AI Projects</h2>
+        <p>Structured 10-day training program — Day-wise schedule and curriculum breakdown.</p>
+      </div>
+
+      <!-- Course Header -->
+      <div class="toc-course-header">
+        <div class="toc-course-badge">☁️</div>
+        <div class="toc-course-info">
+          <h3>AWS CDK for AI Projects Training</h3>
+          <p>Infrastructure as Code for AI-powered cloud applications using AWS CDK v2, TypeScript &amp; Generative AI Constructs</p>
+          <div class="toc-course-pills">
+            <div class="toc-pill"><span>📅</span> 10 Sessions</div>
+            <div class="toc-pill"><span>⏱</span> 40 Hours Total</div>
+            <div class="toc-pill"><span>🕘</span> 09:00 AM – 1:00 PM IST</div>
+            <div class="toc-pill"><span>📆</span> Mon–Fri</div>
+            <div class="toc-pill"><span>🏷</span> Amazon Web Services</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Training Schedule Table -->
+      <div style="margin-bottom:16px;">
+        <h3 style="font-size:18px;font-weight:700;color:#fff;margin:0 0 20px 0;display:flex;align-items:center;gap:8px;">
+          📅 Training Schedule
+        </h3>
+      </div>
+      <div class="toc-schedule-wrap">
+        <table class="toc-schedule-table">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Date</th>
+              <th>IST (India) Time</th>
+              <th>Day</th>
+              <th>Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>23-Mar</td>
+              <td><span class="time-chip">🕘 09:00 AM – 1:00 PM</span></td>
+              <td><span class="day-badge day-weekday">Monday</span></td>
+              <td><span class="hours-chip">4 hrs</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>24-Mar</td>
+              <td><span class="time-chip">🕘 09:00 AM – 1:00 PM</span></td>
+              <td><span class="day-badge day-weekday">Tuesday</span></td>
+              <td><span class="hours-chip">4 hrs</span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>25-Mar</td>
+              <td><span class="time-chip">🕘 09:00 AM – 1:00 PM</span></td>
+              <td><span class="day-badge day-weekday">Wednesday</span></td>
+              <td><span class="hours-chip">4 hrs</span></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>26-Mar</td>
+              <td><span class="time-chip">🕘 09:00 AM – 1:00 PM</span></td>
+              <td><span class="day-badge day-weekday">Thursday</span></td>
+              <td><span class="hours-chip">4 hrs</span></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>27-Mar</td>
+              <td><span class="time-chip">🕘 09:00 AM – 1:00 PM</span></td>
+              <td><span class="day-badge day-weekday">Friday</span></td>
+              <td><span class="hours-chip">4 hrs</span></td>
+            </tr>
+            <tr class="weekend">
+              <td>—</td>
+              <td>28-Mar</td>
+              <td style="color:rgba(255,255,255,0.3)">Weekend Off</td>
+              <td><span class="day-badge day-weekend">Saturday</span></td>
+              <td><span class="hours-chip hours-zero">0</span></td>
+            </tr>
+            <tr class="weekend">
+              <td>—</td>
+              <td>29-Mar</td>
+              <td style="color:rgba(255,255,255,0.3)">Weekend Off</td>
+              <td><span class="day-badge day-weekend">Sunday</span></td>
+              <td><span class="hours-chip hours-zero">0</span></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>30-Mar</td>
+              <td><span class="time-chip">🕘 09:00 AM – 1:00 PM</span></td>
+              <td><span class="day-badge day-weekday">Monday</span></td>
+              <td><span class="hours-chip">4 hrs</span></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>31-Mar</td>
+              <td><span class="time-chip">🕘 09:00 AM – 1:00 PM</span></td>
+              <td><span class="day-badge day-weekday">Tuesday</span></td>
+              <td><span class="hours-chip">4 hrs</span></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>1-Apr</td>
+              <td><span class="time-chip">🕘 09:00 AM – 1:00 PM</span></td>
+              <td><span class="day-badge day-weekday">Wednesday</span></td>
+              <td><span class="hours-chip">4 hrs</span></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>2-Apr</td>
+              <td><span class="time-chip">🕘 09:00 AM – 1:00 PM</span></td>
+              <td><span class="day-badge day-weekday">Thursday</span></td>
+              <td><span class="hours-chip">4 hrs</span></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>3-Apr</td>
+              <td><span class="time-chip">🕘 09:00 AM – 1:00 PM</span></td>
+              <td><span class="day-badge day-weekday">Friday</span></td>
+              <td><span class="hours-chip">4 hrs</span></td>
+            </tr>
+            <tr class="total-row">
+              <td colspan="4" style="text-align:right;color:rgba(245,166,35,0.7);font-size:13px;letter-spacing:0.5px;">TOTAL DURATION</td>
+              <td><span class="total-hours">40 Hours</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Day-wise Breakdown -->
+      <div class="toc-daywise-title">📚 Day-wise Curriculum Breakdown</div>
+      <div class="toc-days-grid">
+
+        <!-- Day 1 -->
+        <div class="toc-day-card">
+          <div class="toc-day-header">
+            <div class="toc-day-label">📅 Day 1</div>
+            <div class="toc-day-hours">4 hrs</div>
+          </div>
+          <div class="toc-day-topic">Introduction to IaC &amp; AWS CDK</div>
+          <ul class="toc-day-topics-list">
+            <li>AWS CDK v2 Overview — What is AWS CDK v2?</li>
+            <li>Introduction to Infrastructure as Code (IaC)</li>
+            <li>Challenges of Cloud Infrastructure</li>
+            <li>Defining Infrastructure as Code</li>
+            <li>Approaches for Defining Infrastructure</li>
+            <li>Using local tsc and cdk</li>
+          </ul>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="toc-day-card">
+          <div class="toc-day-header">
+            <div class="toc-day-label">📅 Day 2</div>
+            <div class="toc-day-hours">4 hrs</div>
+          </div>
+          <div class="toc-day-topic">Using the AWS CDK as an IaC Tool</div>
+          <ul class="toc-day-topics-list">
+            <li>AWS CDK Prerequisites</li>
+            <li>Setup CDK environment</li>
+            <li>AWS CDK Construct Library</li>
+            <li>AWS CDK Command Line Interface (AWS CDK CLI)</li>
+            <li>CDK Workflow</li>
+            <li>Working with CDK (TypeScript)</li>
+            <li>Work with CDK Library in TypeScript</li>
+            <li>Get started with TypeScript — Creating a project</li>
+            <li>Managing AWS Construct Library modules</li>
+          </ul>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="toc-day-card">
+          <div class="toc-day-header">
+            <div class="toc-day-label">📅 Day 3</div>
+            <div class="toc-day-hours">4 hrs</div>
+          </div>
+          <div class="toc-day-topic">AWS CDK Fundamentals</div>
+          <ul class="toc-day-topics-list">
+            <li>The AWS CDK libraries</li>
+            <li>AWS CDK projects</li>
+            <li>AWS CDK apps</li>
+            <li>AWS CDK stacks</li>
+            <li>AWS CDK stages</li>
+            <li>The AWS Generative AI Constructs Library – Part 1</li>
+            <li>The AWS Generative AI Constructs Library – Part 2</li>
+          </ul>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="toc-day-card">
+          <div class="toc-day-header">
+            <div class="toc-day-label">📅 Day 4</div>
+            <div class="toc-day-hours">4 hrs</div>
+          </div>
+          <div class="toc-day-topic">AWS CDK Constructs &amp; Resources</div>
+          <ul class="toc-day-topics-list">
+            <li>AWS CDK constructs</li>
+            <li>AWS CDK resources</li>
+            <li>AWS CDK assets</li>
+            <li>Permissions with AWS CDK</li>
+            <li>Runtime context</li>
+            <li>Best Practices for writing a CDK code</li>
+          </ul>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="toc-day-card">
+          <div class="toc-day-header">
+            <div class="toc-day-label">📅 Day 5</div>
+            <div class="toc-day-hours">4 hrs</div>
+          </div>
+          <div class="toc-day-topic">AWS CDK Environments &amp; Bootstrapping</div>
+          <ul class="toc-day-topics-list">
+            <li>Environments</li>
+            <li>Bootstrapping</li>
+            <li>CDK Pipelines</li>
+            <li>Testing CDK applications</li>
+            <li>Migrating to AWS CDK</li>
+          </ul>
+        </div>
+
+        <!-- Day 6 -->
+        <div class="toc-day-card">
+          <div class="toc-day-header">
+            <div class="toc-day-label">📅 Day 6</div>
+            <div class="toc-day-hours">4 hrs</div>
+          </div>
+          <div class="toc-day-topic">The AWS Generative AI Constructs Library – Part 3 &amp; 4</div>
+          <ul class="toc-day-topics-list">
+            <li>Generative AI L3 constructs</li>
+            <li>Amazon Bedrock Monitoring (Amazon CloudWatch)</li>
+            <li>Deep dive into Generative AI construct patterns</li>
+            <li>Building reusable GenAI construct components</li>
+          </ul>
+        </div>
+
+        <!-- Day 7 -->
+        <div class="toc-day-card">
+          <div class="toc-day-header">
+            <div class="toc-day-label">📅 Day 7</div>
+            <div class="toc-day-hours">4 hrs</div>
+          </div>
+          <div class="toc-day-topic">Generative AI L2 Constructs</div>
+          <ul class="toc-day-topics-list">
+            <li>Generative AI L2 constructs</li>
+            <li>Amazon Bedrock integrations</li>
+            <li>Advanced L2 construct patterns</li>
+            <li>Hands-on labs with L2 constructs</li>
+          </ul>
+        </div>
+
+        <!-- Day 8 -->
+        <div class="toc-day-card">
+          <div class="toc-day-header">
+            <div class="toc-day-label">📅 Day 8</div>
+            <div class="toc-day-hours">4 hrs</div>
+          </div>
+          <div class="toc-day-topic">Vector Databases &amp; AI Storage</div>
+          <ul class="toc-day-topics-list">
+            <li>Amazon OpenSearch Serverless Vector Collection</li>
+            <li>Amazon OpenSearch Vector Index</li>
+            <li>Amazon Aurora DSQL</li>
+            <li>Amazon S3 Vectors</li>
+            <li>amazon-bedrock-rag patterns</li>
+          </ul>
+        </div>
+
+        <!-- Day 9 -->
+        <div class="toc-day-card">
+          <div class="toc-day-header">
+            <div class="toc-day-label">📅 Day 9</div>
+            <div class="toc-day-hours">4 hrs</div>
+          </div>
+          <div class="toc-day-topic">Sample Use Cases &amp; Capstone Project</div>
+          <ul class="toc-day-topics-list">
+            <li>Building Generative AI Apps on AWS with CDK</li>
+            <li>Build generative AI applications with Amazon Titan Text Premier</li>
+            <li>Amazon Bedrock and AWS CDK integration</li>
+            <li>Real-world GenAI app architecture patterns</li>
+          </ul>
+        </div>
+
+        <!-- Day 10 -->
+        <div class="toc-day-card">
+          <div class="toc-day-header">
+            <div class="toc-day-label">📅 Day 10</div>
+            <div class="toc-day-hours">4 hrs</div>
+          </div>
+          <div class="toc-day-topic">Final Project &amp; Review</div>
+          <ul class="toc-day-topics-list">
+            <li>Capstone project presentation</li>
+            <li>End-to-end GenAI application deployment</li>
+            <li>CDK best practices review</li>
+            <li>Q&amp;A and certification guidance</li>
+            <li>Course completion and next steps</li>
+          </ul>
+        </div>
+
+      </div><!-- end days grid -->
+
+      <!-- CTA -->
+      <div class="toc-cta-row">
+        <a class="btn-primary" href="contact.html" style="padding:14px 36px;font-size:15px;display:inline-block;">
+          Enroll in This Course
+        </a>
+        <a class="btn-outline" href="contact.html" style="padding:14px 36px;font-size:15px;display:inline-block;">
+          Request Brochure
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- <div class="stats-bar">
+    <div class="stats-grid">
+      <div><div class="stat-number">30+</div><div class="stat-label">Years of Excellence</div></div>
+      <div><div class="stat-number">30,000+</div><div class="stat-label">Students Trained</div></div>
+      <div><div class="stat-number">99.1%</div><div class="stat-label">Satisfaction Rate</div></div>
+      <div><div class="stat-number">150+</div><div class="stat-label">Certification Paths</div></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="section-title"><h2>Enterprise Learning Tracks</h2><p>Focused programs for leaders, IT teams, and development squads looking to scale fast.</p></div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+        <div class="track-card"><h3>Corporate Upskilling</h3><p>Custom training paths designed for teams, with aligned milestones and outcome reports.</p></div>
+        <div class="track-card"><h3>Security Operations</h3><p>Hands-on workshops for cybersecurity awareness, incident response, and threat management.</p></div>
+        <div class="track-card"><h3>Cloud & AI Adoption</h3><p>Accelerate cloud migration and AI strategy with guided certification and practical labs.</p></div>
+        <div class="track-card"><h3>Project Leadership</h3><p>Leadership and agile transformation training for project leads and program managers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-bg-alt">
+    <div class="container">
+      <div class="section-title"><h2>Our Success Stories</h2><p>Hear from professionals who transformed their careers with DigiKreis.<br/><small style="font-size:12px;color:var(--text-muted);font-style:italic;">To ensure the privacy of our clients, we use pseudonyms.</small></p></div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card"><div class="quote-mark">"</div><p class="testimonial-text">"The Azure training program was comprehensive and immediately applicable. Got promoted 6 months after certification."</p><div class="testimonial-name">Sarah Mitchell</div><div class="testimonial-role">Cloud Solutions Architect</div></div>
+        <div class="testimonial-card"><div class="quote-mark">"</div><p class="testimonial-text">"Cybersecurity bootcamp gave me the skills and confidence to lead our organization's security initiatives."</p><div class="testimonial-name">John Anderson</div><div class="testimonial-role">Security Officer</div></div>
+        <div class="testimonial-card"><div class="quote-mark">"</div><p class="testimonial-text">"PMP certification training was the best investment in my career. I highly recommend DigiKreis!"</p><div class="testimonial-name">Maya Patel</div><div class="testimonial-role">Project Manager</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="upcoming-list">
+        <div class="upcoming-card"><div class="upcoming-date">27 May 2026</div><div class="upcoming-title">CompTIA Security+ SY0-701</div></div>
+        <div class="upcoming-card"><div class="upcoming-date">1 April 2026</div><div class="upcoming-title">Using HPE OneView, Rev. 21.31</div></div>
+        <div class="upcoming-card"><div class="upcoming-date">19 Feb 2026</div><div class="upcoming-title">Microsoft Data Fabric Engineer</div></div>
+      </div>
+    </div>
+  </section> -->
+
+</div>
+
+<!-- ════════════════ DOMAIN DETAIL OVERLAY (course list within a domain) ════════════════ -->
+<div id="domain-detail-page">
+  <div class="dd-header">
+    <button class="dd-back-btn" id="dd-back-btn">&#8592; Back to Domains</button>
+    <div class="dd-domain-title">
+      <h1 id="dd-domain-name">Domain Name</h1>
+      <p id="dd-domain-meta">0 Courses</p>
+    </div>
+    <a class="dd-contact-btn" id="dd-contact-btn" href="contact.html">
+      &#9993; Contact Us
+    </a>
+  </div>
+
+  <div class="dd-search-bar">
+    <div class="dd-search-wrapper">
+      <span class="dd-search-icon">&#128269;</span>
+      <input type="text" class="dd-search-input" id="dd-search-input" placeholder="Search courses in this domain...">
+    </div>
+    <div class="dd-search-count" id="dd-search-count"></div>
+  </div>
+
+  <div class="dd-body">
+    <div class="dd-courses-grid" id="dd-courses-grid"></div>
+    <div class="dd-no-results" id="dd-no-results" style="display:none;">
+      <span>&#128269;</span>
+      <div>No courses found matching your search.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div style="margin-bottom: 2rem;">
+      <div style="font-size: 14px; font-weight: 600; color: var(--text-muted); margin-bottom: 0.75rem;">Subscribe to our Newsletter</div>
+      <div class="footer-newsletter">
+        <input type="email" placeholder="Enter your email" />
+        <button>Subscribe</button>
+      </div>
+      <div class="social-links">
+        <a class="social-link" href="https://www.linkedin.com/company/digikreis-technologies/" target="_blank">
+          <img src="images/linkedin.svg" alt="LinkedIn" style="width: 16px; height: 16px;" />
+        </a>
+        <a class="social-link" href="https://www.instagram.com/digikreis?igsh=djFreXptcjRud2U%3D" target="_blank">
+          <img src="images/instagram.svg" alt="Instagram" style="width: 16px; height: 16px;" />
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <div class="nav-logo-icon">
+            <img src="images/logo.png" alt="Logo" />
+          </div>
+          <span style="font-size: 16px; font-weight: 700; color: var(--gold-light);">DigiKreis Technologies</span>
+        </div>
+        <p>Premium enterprise training designed for modern teams and global certification readiness.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Training Domains</h4>
+        <ul>
+          <li>Cybersecurity</li>
+          <li>Cloud Computing</li>
+          <li>Artificial Intelligence</li>
+          <li>Project Management</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:sumathi@digikreis.in">sumathi@digikreis.in</a></li>
+          <li>+91 80958 19639</li>
+          <li>+91 80898 27069</li>
+          <li><a href="https://www.linkedin.com/company/digikreis-technologies/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/digikreis?igsh=djFreXptcjRud2U%3D" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 DigiKreis Technologies. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
